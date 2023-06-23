@@ -17,8 +17,4 @@ const button = document.querySelectorAll('.button')
 //     })
 // }
 
-button.forEach(i => {
-    i.addEventListener('click', function(){
-        console.log('You pressed the button')
-    })
-})
+button.forEach(i => i.onclick = () => console.log('You pressed the button'))
